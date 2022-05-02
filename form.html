@@ -1,25 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Forms</title>
 </head>
+
 <body>
 
     <h1>HTML Forms</h1>
 
-    <form>
-        <label for="username">Enter username:</label>
-        <input type="text" id="username">
-        <br><br>
-        <label for="email">Enter email:</label>
-        <input type="email" id="email">
-        <br><br>
-        <label for="password">Enter password:</label>
-        <input type="password" id="password">
-    </form>
+    <!-- LOGIN -->
+
+    <div>
+        <form>
+            <label for="username">Enter username:</label>
+            <input type="text" id="username" name="username">
+            <br><br>
+            <label for="email">Enter email:</label>
+            <input type="email" id="email" name="email">
+            <br><br>
+            <label for="password">Enter password:</label>
+            <input type="password" id="password" name="password">
+        </form>
+    </div>
+
+    <!-- GENDER SELECT -->
+
+    <br><br>
+
+    <div>
+        <p>Select your gender:</p>
+
+        <form action="">
+            <input type="radio" name="gender" value="male"> Male <br>
+            <input type="radio" name="gender" value="female"> Female <br>
+            <input type="radio" name="gender2" value="other"> Other
+        </form>
+    </div>
+
+    <!-- AGE SELECT -->
+
+    <div>
+        <p>Select your age:</p>
+
+        <input type="radio" name="age" value="0-25" id="option-1">
+        <label for="option-1">0-25</label><br>
+        <input type="radio" name="age" value="26-50" id="option-2">
+        <label for="option-2">26-50</label><br>
+        <input type="radio" name="age" value="51+" id="option-3">
+        <label for="option-3">50+</label>
+    </div>
+
+    <br><br>
+
+    <!--  SECURITY SELECT -->
+
+    <div>
+        <p>Select the correct awnser:</p>
+
+        <label for="question">Security question</label>
+        <select name="question" id="question">
+            <option value="q1">What colour are your favourite pair of socks</option>
+            <option value="q2">What colour are your favourite pair of shoes</option>
+            <option value="q3">What colour are your favourite pair of gloves</option>
+        </select>
+    </div>
+
+    <br><br>
+
+    <!-- SECURITY AWNSER -->
     
+    <div>
+        <label for="answer">Security question awnser</label>
+        <input type="text" id="answer" name="answer">
+    </div>
+
+
 </body>
+
+
+<!--
+        <p><b>Note:</b> When a user clicks on a radio-button,
+            it becomes checked,
+            and all other radio-buttons with equal
+            name become unchecked.
+        </p> -->
+
 </html>
